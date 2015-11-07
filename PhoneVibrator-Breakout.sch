@@ -143,15 +143,15 @@
 <library name="HokieGeek">
 <packages>
 <package name="PHONE_VIBRATOR">
-<rectangle x1="-1.5875" y1="0.3175" x2="1.4125" y2="5.3175" layer="1"/>
-<smd name="P$1" x="-1.0918625" y="-0.9525" dx="1" dy="1" layer="1"/>
-<smd name="P$2" x="0.90961875" y="-0.9525" dx="1" dy="1" layer="1"/>
+<smd name="P$1" x="-0.9966125" y="-0.889" dx="1" dy="1" layer="1"/>
+<smd name="P$2" x="1.00486875" y="-0.85725" dx="1" dy="1" layer="1"/>
+<smd name="P$3" x="0" y="2.54" dx="3" dy="5" layer="1"/>
 </package>
 </packages>
 <symbols>
 <symbol name="PHONE_VIBRATOR">
 <pin name="P$1" x="-2.54" y="0" length="middle" direction="pwr" rot="R270"/>
-<pin name="P$2" x="2.54" y="0" length="middle" direction="pwr" rot="R270"/>
+<pin name="P$2" x="0" y="0" length="middle" direction="pwr" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -843,7 +843,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="7.62" y="5.08" rot="R270"/>
-<instance part="JP1" gate="G$1" x="20.32" y="5.08" rot="R180"/>
+<instance part="JP1" gate="G$1" x="17.78" y="7.62" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -852,15 +852,14 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <segment>
 <pinref part="U$1" gate="G$1" pin="P$1"/>
 <pinref part="JP1" gate="G$1" pin="1"/>
-<wire x1="7.62" y1="7.62" x2="12.7" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="7.62" x2="12.7" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="7.62" x2="10.16" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="P$2"/>
 <pinref part="JP1" gate="G$1" pin="2"/>
-<wire x1="7.62" y1="2.54" x2="12.7" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="5.08" x2="10.16" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
